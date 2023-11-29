@@ -1,10 +1,13 @@
 import style from './style.module.css';
+import Link from 'next/link';
 
 export default function Task1() {
 
     return (
         <>
-            <p>Создайте форму для ввода имени, фамилии, адреса электронной почты и пароля.</p>
+            <p>
+                1.Создайте форму для ввода имени, фамилии, адреса электронной почты и пароля.
+            </p>
             <div className={style.form}>
                 <div>
                     <input placeholder='введите имя' />
@@ -26,6 +29,10 @@ export default function Task1() {
                     <button>Регистрация</button>
                 </div>
             </div>
+
+            <p>
+                <Link href='/'>back</Link>
+            </p>
         </>
     )
 }

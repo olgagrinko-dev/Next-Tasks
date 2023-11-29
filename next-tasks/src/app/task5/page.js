@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Task5() {
     const array = ["New York", "London", "Tokyo", "Paris", "Berlin"];
 
@@ -9,7 +11,7 @@ export default function Task5() {
     return (
         <>
             <p>
-                Создайте массив данных, представляющий элементы, которые вы хотите
+                5.Создайте массив данных, представляющий элементы, которые вы хотите
                 отобразить в списке используя map. ["New York", "London", "Tokyo", "Paris", "Berlin"].
                 Добавить событие клика с распознаванием на какой именно li был совершен клик
             </p>
@@ -17,6 +19,10 @@ export default function Task5() {
             <ul >
                 {array.map((el, index) => <li key={index} onClick={doShow}>{el}</li>)}
             </ul>
+
+            <p>
+                <Link href='/'>back</Link>
+            </p>
         </>
     )
 }

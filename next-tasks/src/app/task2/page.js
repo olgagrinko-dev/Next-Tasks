@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import style from './style.module.css';
+import Link from 'next/link';
 
 export default function Task2() {
     const [obj, setObj] = useState({});
@@ -20,7 +21,7 @@ export default function Task2() {
     return (
         <>
             <p>
-                Создайте форму для ввода имени, фамилии, адреса электронной почты и пароля.
+               2.Создайте форму для ввода имени, фамилии, адреса электронной почты и пароля.
                 По клику на кнопку проверить вводимые данные на регулярные выражения. В
                 случае успешной валидации – alert(true)
             </p>
@@ -42,6 +43,10 @@ export default function Task2() {
                     <button onClick={doChek}>Регистрация</button>
                 </div>
             </div>
+
+            <p>
+                <Link href='/'>back</Link>
+            </p>
         </>
     )
 }
