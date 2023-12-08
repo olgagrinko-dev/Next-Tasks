@@ -1,7 +1,3 @@
-export default function Calculator() {
-    return (
-        <>
-           
-        </>
-    )
+export default function Calculator(str) {
+    return eval(str);
 }

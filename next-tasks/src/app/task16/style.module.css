@@ -1,0 +1,12 @@
+.contVal{
+    display: flex;
+    flex-direction: column;    
+    align-items:flex-start;   
+    gap: 15px;
+}
+
+.contVal input{
+    border-radius: 5px;
+    padding: 12px;
+}
+
